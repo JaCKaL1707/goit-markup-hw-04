@@ -476,10 +476,13 @@ p {
 .footer-mailto:focus {
   color: var(--anchors-accent-color);
 }
+.addres-container {
+}
 .footer-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: c;
 }
 .social-header {
   display: flex;
