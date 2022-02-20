@@ -482,25 +482,38 @@ p {
   justify-content: center;
 }
 .social-header {
+  display: flex;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
 }
 .social-list {
+  display: flex;
 }
 .social-list-item {
+  display: flex;
   list-style: none;
 }
-.footer-social-acnhors {
+.footer-social-anchors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #ffffff;
   width: 44px;
   height: 44px;
 }
-
+.footer-social-anchors:hover,
+.footer-social-anchors:focus {
+  color: var(--portfolio-buttons-background-color);
+  background-color: var(--team-social-background-color);
+  border: 12px solid var(--borders-active-color);
+  border-radius: 50%;
+}
 .footer-social-icon {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: currentColor;
+
   background-color: var(--footer-social-links-background-color);
 }
 
