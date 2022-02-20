@@ -16,6 +16,7 @@
   --portfolio-buttons-background-color: #f5f4fa;
   --portfolio-buttons-color: #212121;
   --footer-mail-and-callto: rgba(255, 255, 255, 0.6);
+  --team-social-background-color: #2196f3;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -279,6 +280,38 @@ p {
   line-height: 1.18;
   color: var(--paragraph-color);
 }
+.team-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-social-link-list {
+  display: flex;
+  list-style: none;
+  margin-bottom: 30px;
+  height: 44px;
+}
+.team-social-list-item {
+  margin-right: 22px;
+}
+.team-social-anchors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.team-social-anchors:hover,
+.team-social-anchors:focus {
+  color: var(--portfolio-buttons-background-color);
+  background-color: var(--team-social-background-color);
+  border: 12px solid #2196f3;
+  border-radius: 50%;
+}
+
 /* our-clients-section */
 .our-clients-section {
   display: flex;
@@ -299,7 +332,7 @@ p {
 .our-clients-list-item {
   width: 170px;
   height: 92px;
-  border: 1px solid #000;
+
   margin-right: 30px;
   fill: #afb1b8;
 }
@@ -307,16 +340,30 @@ p {
   margin-right: 0px;
 }
 .our-clients-anchors {
-  display: inline-flex;
-  outline: 1px solid red;
+  display: block;
+
   width: 106px;
   height: 60px;
   margin-top: 16px;
   margin-right: 32px;
   margin-bottom: 16px;
   margin-left: 32px;
+  text-decoration: none;
+  color: #afb1bb;
+}
+.our-clients-list-item:hover,
+.our-clients-list-item:focus {
+  color: var(--anchors-accent-color);
 }
 .our-clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+  border: 1px solid #afb1bb;
+}
+.our-clients-anchors:hover,
+.our-clients-anchors:focus {
+  color: var(--anchors-accent-color);
 }
 /* footer-section */
 .footer-section {
@@ -366,6 +413,9 @@ p {
 .footer-mailto:hover,
 .footer-mailto:focus {
   color: var(--anchors-accent-color);
+}
+.footer-container {
+  display: inline-flex;
 }
 /* portfolio-section-of-styles */
 .main-box-portfolio {
