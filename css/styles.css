@@ -18,6 +18,10 @@
   --footer-mail-and-callto: rgba(255, 255, 255, 0.6);
   --team-social-background-color: #2196f3;
   --team-social-anchors-color: #afb1bb;
+  --clients-acnhors-color: #afb1bb;
+  --borders-active-color: #2196f3;
+  --footer-social-links-background-color: rgba(255, 255, 255, 0.1);
+  --footer-social-anchors-color: #ffffff;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -122,6 +126,16 @@ p {
 }
 /* main section */
 .main-box {
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 /* centralize container  */
 .overlay {
@@ -264,7 +278,7 @@ p {
 }
 .workers {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 .worker-full-name {
   font-weight: 500;
@@ -289,6 +303,7 @@ p {
 .team-social-link-list {
   display: flex;
   list-style: none;
+
   margin-bottom: 30px;
 }
 .team-social-list-item {
@@ -310,7 +325,7 @@ p {
 .team-social-anchors:focus {
   color: var(--portfolio-buttons-background-color);
   background-color: var(--team-social-background-color);
-  border: 12px solid #2196f3;
+  border: 12px solid var(--borders-active-color);
   border-radius: 50%;
 }
 
@@ -346,10 +361,10 @@ p {
 
   width: 170px;
   height: 92px;
-  border: 1px solid #000000;
+  border: 1px solid var(--clients-acnhors-color);
   text-decoration: none;
 
-  color: #afb1bb;
+  color: var(--clients-acnhors-color);
 }
 .our-clients-list-item:hover,
 .our-clients-list-item:focus {
@@ -409,7 +424,7 @@ p {
 .our-clients-anchors:hover,
 .our-clients-anchors:focus {
   color: var(--anchors-accent-color);
-  border: 1px solid #2196f3;
+  border: 1px solid var(--borders-active-color);
   border-radius: 3px;
 }
 /* footer-section */
@@ -462,16 +477,33 @@ p {
   color: var(--anchors-accent-color);
 }
 .footer-container {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-header {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 .social-list {
 }
 .social-list-item {
+  list-style: none;
 }
 .footer-social-acnhors {
+  color: #ffffff;
+  width: 44px;
+  height: 44px;
 }
+
 .footer-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+  background-color: var(--footer-social-links-background-color);
 }
+
 /* portfolio-section-of-styles */
 .main-box-portfolio {
 }
