@@ -112,8 +112,11 @@ p {
 .callto-icon {
   width: 16px;
   height: 12px;
-  fill: #000;
-  outline: 1px solid tomato;
+  fill: currentColor;
+}
+.mailto-icon:hover,
+.mailto-icon:focus {
+  color: var(--anchors-accent-color);
 }
 /* main section */
 .main-box {
