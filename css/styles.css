@@ -477,12 +477,11 @@ p {
   color: var(--anchors-accent-color);
 }
 .addres-container {
+  margin-right: 70px;
 }
 .footer-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: c;
+  align-items: baseline;
 }
 .social-header {
   display: flex;
@@ -496,6 +495,9 @@ p {
 .social-list-item {
   display: flex;
   list-style: none;
+  background-color: var(--footer-social-links-background-color);
+  margin-right: 10px;
+  border-radius: 50%;
 }
 .footer-social-anchors {
   display: flex;
@@ -516,8 +518,6 @@ p {
   width: 20px;
   height: 20px;
   fill: currentColor;
-
-  background-color: var(--footer-social-links-background-color);
 }
 
 /* portfolio-section-of-styles */
