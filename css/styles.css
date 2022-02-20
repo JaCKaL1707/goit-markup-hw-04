@@ -298,6 +298,7 @@ p {
   height: 92px;
   border: 1px solid #000;
   margin-right: 30px;
+  fill: #afb1b8;
 }
 .our-clients-list-item:last-child {
   margin-right: 0px;
