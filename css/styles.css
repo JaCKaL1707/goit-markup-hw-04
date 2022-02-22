@@ -117,14 +117,14 @@ p {
   padding-bottom: 32px;
 }
 .mailto-icon {
-  width: 16px;
-  height: 12px;
+  width: 18px;
+  height: 14px;
   margin-right: 10px;
   fill: currentColor;
 }
 .callto-icon {
-  max-width: 10px;
-  max-height: 16px;
+  width: 17px;
+  height: 18px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -514,6 +514,9 @@ p {
   background-color: var(--footer-social-links-background-color);
   margin-right: 10px;
   border-radius: 50%;
+}
+.social-list-item:last-child {
+  margin-right: 0px;
 }
 .footer-social-anchors {
   display: flex;
