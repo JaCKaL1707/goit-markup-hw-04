@@ -22,6 +22,7 @@
   --borders-active-color: #2196f3;
   --footer-social-links-background-color: rgba(255, 255, 255, 0.1);
   --footer-social-anchors-color: #ffffff;
+  --discription-background-color: #f5f4fa;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -102,9 +103,10 @@ p {
 .contacts-list {
   display: flex;
   margin-left: auto;
+  align-items: baseline;
 }
 .contacts-list-item {
-  margin-right: 50px;
+  margin-right: 32px;
 }
 .contacts-list .contacts-list-item:last-child {
   margin-right: 0px;
@@ -114,10 +116,16 @@ p {
   color: var(--paragraph-color);
   padding-bottom: 32px;
 }
-.mailto-icon,
-.callto-icon {
+.mailto-icon {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.callto-icon {
+  max-width: 10px;
+  max-height: 16px;
+  margin-right: 10px;
   fill: currentColor;
 }
 .mailto-icon:hover,
@@ -125,8 +133,7 @@ p {
   color: var(--anchors-accent-color);
 }
 /* main section */
-.main-box {
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -196,10 +203,18 @@ p {
   margin-right: 30px;
 }
 
-.discription-list-icon {
-  display: block;
+.discription-list-icon-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
-  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  background-color: var(--discription-background-color);
+}
+.discription-list-icon {
+  width: 70px;
+  height: 70px;
 }
 .discription-list .discription-list-item:last-child {
   margin-right: 0px;
@@ -315,6 +330,7 @@ p {
   color: var(--team-social-anchors-color);
   width: 44px;
   height: 44px;
+  margin-right: 10px;
 }
 .team-social-icon {
   max-width: 20px;
@@ -532,7 +548,7 @@ p {
 .product-nav-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .buttons {
   font-family: Roboto, sans-serif;
