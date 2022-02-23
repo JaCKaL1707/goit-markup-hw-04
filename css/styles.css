@@ -106,6 +106,8 @@ p {
   align-items: baseline;
 }
 .contacts-list-item {
+  display: inline-block;
+  align-items: center;
   margin-right: 32px;
 }
 .contacts-list .contacts-list-item:last-child {
@@ -117,13 +119,14 @@ p {
   padding-bottom: 32px;
 }
 .mailto-icon {
-  width: 18px;
-  height: 14px;
+  align-items: center;
+  width: 22px;
+  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
 .callto-icon {
-  width: 17px;
+  width: 16px;
   height: 18px;
   margin-right: 10px;
   fill: currentColor;
@@ -540,8 +543,6 @@ p {
 }
 
 /* portfolio-section-of-styles */
-.main-box-portfolio {
-}
 
 /* buttons-section */
 .buttons-bar-section {
@@ -584,6 +585,13 @@ p {
   display: flex;
   margin-top: 30px;
   margin-right: 30px;
+}
+.product-list-item:hover,
+.product-list-item:focus {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .product-list-item:nth-child(3n) {
   margin-right: 0px;
