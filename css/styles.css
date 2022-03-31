@@ -120,14 +120,14 @@ p {
 }
 .mailto-icon {
   align-items: center;
-  width: 22px;
+  width: 20px;
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
 .callto-icon {
-  width: 16px;
-  height: 18px;
+  width: 18px;
+  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
