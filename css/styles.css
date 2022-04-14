@@ -109,16 +109,19 @@ p {
   display: inline-block;
   align-items: center;
   margin-right: 32px;
+  
 }
 .contacts-list .contacts-list-item:last-child {
   margin-right: 0px;
 }
 .mailto,
 .callto {
+  display: flex;
   color: var(--paragraph-color);
   padding-bottom: 32px;
 }
 .mailto-icon {
+  display: inline-flex;
   align-items: center;
   width: 20px;
   height: 16px;
